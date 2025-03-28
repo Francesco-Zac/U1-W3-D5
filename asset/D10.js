@@ -446,7 +446,7 @@ function printTd() {
     console.log(elements[i].textContent);
   }
 }
-console.log(printTd());
+printTd();
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
