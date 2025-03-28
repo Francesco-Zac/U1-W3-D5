@@ -428,7 +428,7 @@ function selectID() {
   let element = document.querySelector("#container");
   return element;
 }
-
+console.log(selectID());
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
@@ -436,6 +436,7 @@ function selectTd() {
   let elements = document.querySelectorAll("td");
   return elements;
 }
+
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
@@ -445,6 +446,7 @@ function printTd() {
     console.log(elements[i].textContent);
   }
 }
+console.log(printTd());
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
@@ -454,6 +456,7 @@ function addBackground() {
     link.style.backgroundColor = "red";
   });
 }
+document.querySelectorAll("button")[2].addEventListener("click", addBackground);
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
@@ -463,6 +466,7 @@ function addElement() {
   newElement.textContent = "Nuovo elemento";
   list.appendChild(newElement);
 }
+document.querySelector("button").addEventListener("click", addElement);
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
@@ -473,6 +477,7 @@ function emptyList() {
   }
   return list;
 }
+document.querySelectorAll("button")[1].addEventListener("click", emptyList);
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
@@ -482,6 +487,7 @@ function addClass() {
     element.classList.add("test");
   });
 }
+addClass();
 
 // [EXTRA] JS Avanzato
 
